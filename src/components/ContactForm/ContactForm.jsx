@@ -1,6 +1,6 @@
 import {useState} from "react"
 import PropTypes from 'prop-types';
-import s from './сontactForm.module.css'
+
 
 const ContactForm = ({onSubmit}) =>{
 
@@ -37,7 +37,7 @@ onChange={handleNameChange}
 
 />
 </label>
-<label className={s.label}> Phone
+<label> Phone
 <input
 type="tel"
 name="number"
