@@ -1,6 +1,6 @@
 import {useState} from "react"
 import PropTypes from 'prop-types';
-import s from './ContactForm.module.css'
+import s from './сontactForm.module.css'
 
 const ContactForm = ({onSubmit}) =>{
 
