@@ -1,7 +1,8 @@
 import s from './ContactList.module.css'
 import PropTypes from 'prop-types';
-const ContactList = ({items,deleteContact}) =>{
 
+
+export default function ContactList({items,deleteContact}) {
   return(
 
     <ul>
@@ -16,14 +17,11 @@ const ContactList = ({items,deleteContact}) =>{
 
 
 
+
   )
 }
+
 ContactList.propTypes = {
   items: PropTypes.array.isRequired,
   deleteContact: PropTypes.func,
 };
-
-
-
-
-export default ContactList
