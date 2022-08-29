@@ -19,6 +19,8 @@ const handleNumberChange = (e) =>{
 const onSubmitForm = (event) =>{
   event.preventDefault()
   onSubmit(name,number)
+  setName('')
+  setNumber('')
 }
 
 

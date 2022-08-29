@@ -6,13 +6,15 @@ import { nanoid } from "nanoid";
  const App = () =>{
 
   const[contacts,setContacts] = useState(
-    JSON.parse(localStorage.getItem('contacts'))
+    JSON.parse(localStorage.getItem('contacts')) ?? []
   );
   const [filter,setFilter] = useState('');
 
 
 
 useEffect(()=>{
+
+
 
   localStorage.setItem('contacts',JSON.stringify(contacts))
 
